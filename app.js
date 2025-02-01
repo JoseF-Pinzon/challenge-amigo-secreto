@@ -2,8 +2,9 @@
  
 //Variables Globales
 
-let amigo = [];
+let amigos = [];
 
+//Agregar amigos al array, validar campo vacio y limpiar campo.
 function agregarAmigo() {
     let nombreAmigoInsertado = document.getElementById('amigo').value;
     if ( nombreAmigoInsertado == "") {
@@ -11,9 +12,9 @@ function agregarAmigo() {
         alert("Ingrese un nombre, es obligatorio");
 
     } else {
-        amigo.push(nombreAmigoInsertado);
-        alert(amigo);
+        amigos.push(nombreAmigoInsertado);
         document.getElementById('amigo').value = '';
     };
 
 };
+
